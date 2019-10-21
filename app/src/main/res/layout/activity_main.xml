@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fade_out_animation_android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center|top"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:onClick="startBlink"
+                android:text="Blink" />
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:onClick="startFadeIn"
+                android:text="Fade in" />
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:onClick="startMove"
+                android:text="Move" />
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:onClick="startSlideDown"
+                android:text="Slide Down" />
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:onClick="startZoomIn"
+                android:text="Zoom In" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:onClick="startBounce"
+                android:text="Bounce" />
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:onClick="startFadeOut"
+                android:text="Fade Out" />
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:onClick="startRotate"
+                android:text="Rotate" />
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:onClick="startSlideUp"
+                android:text="Slide up" />
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:onClick="startZoomOut"
+                android:text="Zoom Out" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|top">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:onClick="startZoomInRotate"
+            android:text="Zoom In + Rotate" />
+    </LinearLayout>
+
+</LinearLayout>
